@@ -1,0 +1,65 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ---- Virtual environments ----
+venv/
+env/
+ENV/
+backend/venv/
+.venv/
+
+# ---- Environment variables / secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Flask ----
+instance/
+.webassets-cache
+flask_session/
+
+# ---- Uploads & generated files (runtime data, not source) ----
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/results/*
+!backend/results/.gitkeep
+
+# ---- Databases ----
+*.sqlite3
+*.db
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Node / Frontend (in case you add npm later) ----
+node_modules/
+frontend/dist/
+frontend/build/
+npm-debug.log*
+yarn-error.log*
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Testing / coverage ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Packaging ----
+*.egg-info/
+dist/
+build/
